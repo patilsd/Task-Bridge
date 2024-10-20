@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font awesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+        <link rel="icon" href="../images/TB_Logo.png">
+        <title>Cyber Cyclists 020</title>
+        <link rel="stylesheet" href="homepage.css" />
+    </head>
+
+<body>
+    <nav>
+        <div id="navbar">
+            <div class="nav_left">
+                <div id="burger_icon"><i class="fa-solid fa-bars"></i></div>
+                <a href="../index.html"><img src="../images/TB_Logo.png" alt="Website Logo" /></a>
+                <div id="nav_items">
+                    <a href="./homepage.html">
+                        <div class="nav_item">
+                            Dashboards <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                    </a>
+                    <a href="./createTask.html">
+                        <div class="nav_item create_btn">Create</div>
+                    </a>
+                    <a href="../index.html"><div class="nav_item">
+                        Log out
+                    </div></a>
+                </div>
+            </div>
+            <div class="nav_right">
+                <div id="search_bar">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" placeholder="Search" />
+                </div>
+                <div class="nav_icon"><i class="fa-solid fa-bell"></i></div>
+                <div class="nav_icon"><i class="fa-solid fa-gear"></i></div>
+                <div class="nav_icon"><i class="fa-solid fa-user"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard -->
+
+    <div id="content">
+        <aside>
+            <div id="sidebar">
+                <div id="side_header">
+                    <img src="../images/profile_img.jpg" alt="profile_img">
+                    <div class="header_text">
+                        <div class="sidebar_title">My Kanban Project</div>
+                        <div class="sidebar_subtitle">Software Project</div>
+                    </div>
+                </div>
+                <div id="planning">
+                    <div class="side_heading">PLANNING</div>
+                    <div id="sidebar_items">
+                        <div class="sidebar_item">
+                            <span><i class="fa-solid fa-bars-staggered"></i></span>
+                            <span>Timeline</span>
+                        </div>
+                        <a href="./kanban.html">
+                            <div class="sidebar_item">
+                                <span><i class="fa-solid fa-chess-board"></i></span>
+                                <span>Board</span>
+                            </div>
+                        </a>
+                        <div class="sidebar_item">
+                            <span><i class="fa-solid fa-list"></i></span>
+                            <span>List</span>
+                        </div>
+                        <div class="sidebar_item">
+                            <span><i class="fa-solid fa-bullseye"></i></span>
+                            <span>Goals</span>
+                        </div>
+                        <div class="sidebar_item">
+                            <span><i class="fa-solid fa-plus"></i></span>
+                            <span>Add view</span>
+                        </div>
+                    </div>
+                    <div class="side_heading">DEVELOPMENT</div>
+                    <div class="sidebar_item">
+                        <span><i class="fa-solid fa-code"></i></span>
+                        <span>Code</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <div class="list_container">
+                <h2>List</h2>
+                <div id="list_bar">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search..." />
+                        <button class="search-button">Search</button>
+                    </div>
+                    <div class="list_item">
+                        <div><span style="padding: 10px;"><i class="fa-solid fa-share-nodes fa-2xs"
+                                    style="color: black;"></i></span>Share </div>
+                        <div><span style="padding: 10px;"><i class="fa-solid fa-filter fa-2xs"
+                                    style="color: black;"></i></span>Filter</div>
+                        <div><span style="padding: 10px;"><i class="fa-solid fa-layer-group fa-2xs"
+                                    style="color: black;"></i></span>Group </div>
+                        <div>More</div>
+                    </div>
+                </div>
+
+                <div id="table_data">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th># Key</th>
+                                <th><span style="padding: 5px;"><i class="fa-solid fa-list fa-2xs"
+                                            style="color: black;"></i></span>Summary</th>
+                                <th><span style="padding: 5px;"><i class="fa-solid fa-circle-arrow-right fa-2xs"
+                                            style="color: black;"></i></span>Status</th>
+                                <th><span style="padding: 5px;"></span>Sprint -</th>
+                                <th><span style="padding: 5px;"><i class="fa-solid fa-at fa-2xs"
+                                            style="color: black;"></i></span>Assignee</th>
+                                <th><span style="padding: 5px;"><i class="fa-regular fa-calendar-days fa-2xs"
+                                            style="color: black;"></i></span>Due date</th>
+                                <th><span style="padding: 5px;"><i class="fa-regular fa-calendar-days fa-2xs"
+                                            style="color: black;"></i></span>Created</th>
+                                <th><span style="padding: 5px;"><i class="fa-regular fa-calendar-days fa-2xs"
+                                            style="color: black;"></i></span>Updated</th>
+                                <th><span style="padding: 5px;"><i class="fa-solid fa-at fa-2xs"
+                                            style="color: black;"></i></span>Reporter</th>
+                                <th><span style="padding: 5px;"></span>Parent</th>
+                                <th><span style="padding: 5px;"><i class="fa-solid fa-code-branch fa-2xs"
+                                            style="color: black;"></i></span>Development</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*</td>
+                                <td>DM-37</td>
+                                <td>Nav bar, Create page and merging files to deploy</td>
+                                <td class="status">IN PROGRESS</td>
+                                <td>Sprint - 1</td>
+                                <td class="img_box"><img src="../images/Ankur_Sinha_profile.png" alt="@AS"><span>Ankur
+                                        Sinha</span></td>
+                                <td class="due">Aug 26, 2024</td>
+                                <td>Aug 26, 2024</td>
+                                <td>Aug 26, 2024</td>
+                                <td>Debobrota</td>
+                                <td style="color: rgb(207, 201, 201);">Frontend Key</td>
+                                <td>Review</td>
+
+                            </tr>
+
+
+
+                            <tr>
+                                <td>*</td>
+                                <td>DM-14</td>
+                                <td>Created Homepage, graph view , login & signup page</td>
+                                <td class="status">READY FOR UAT</td>
+                                <td>Sprint - 2</td>
+                                <td class="img_box"><img src="../images/Shweta_Patil_profile.png" alt="@SP"><span>Shweta
+                                        Patil</span></td>
+                                <td class="due">Aug 26, 2024</td>
+                                <td>Aug 26, 2024</td>
+                                <td>Aug 26, 2024</td>
+                                <td>Debobrota</td>
+                                <td style="color: rgb(207, 201, 201);">Frontend Key</td>
+                                <td>Review</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>*</td>
+                                <td>DM-1</td>
+                                <td>Footer bar,List view,kanban view for project</td>
+                                <td class="status">TODO</td>
+                                <td>Sprint - 3</td>
+                                <td class="img_box"><img src="../images/Pragya_Gupta_profile.png" alt="@PG"><span>Pragya
+                                        Gupta</span></td>
+                                <td class="due">Aug 9, 2023</td>
+                                <td>Aug 26, 2024</td>
+                                <td>Aug 26, 2024</td>
+                                <td>Debobrota</td>
+                                <td style="color: rgb(207, 201, 201);">Frontend Key</td>
+                                <td>Review</td>
+                            </tr>
+
+                            <tr>
+                                <td>*</td>
+                                <td>DM-36</td>
+                                <td>Testing</td>
+                                <td class="status">BACKLOG</td>
+                                <td>Sprint - 4</td>
+                                <td>Team</td>
+                                <td class="due">Aug 26, 2024</td>
+                                <td>Aug 26, 2024</td>
+                                <td>Aug 26, 2024</td>
+                                <td>Debobrota</td>
+                                <td style="color: rgb(207, 201, 201);">Frontend Key</td>
+                                <td>Merge</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Footer Section -->
+    <section class="container">
+        <img src="../images/TB_Logo.png" alt="TB Logo" />
+        <div class="row">
+            <div class="d1">
+                <h1>Company</h1>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="d1">
+                <h1>Products</h1>
+                <ul>
+                    <li><a href="#">TB Dashboard</a></li>
+                    <li><a href="#">TB Workflow</a></li>
+                    <li><a href="#">TB Service Management</a></li>
+                    <br />
+                    <li><a href="#">See all products →</a></li>
+                </ul>
+            </div>
+            <div class="d1">
+                <h1>Resources</h1>
+                <ul>
+                    <li><a href="#">Technical support</a></li>
+                    <li><a href="#">Purchasing & licensing</a></li>
+                    <li><a href="#">Knowledge base</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">My account</a></li>
+                    <br />
+                    <li><a href="#">Create support ticket →</a></li>
+                </ul>
+            </div>
+            <div class="d1">
+                <h1>Learn</h1>
+                <ul>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Training & certification</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Developer resources</a></li>
+                    <li><a href="#">Enterprise services</a></li>
+                    <br />
+                    <li><a href="#">See all resources →</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Copyright © 2024 Masai</p>
+
+            <div class="footer-link">
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Impressum</a></li>
+                </ul>
+                <div class="lang">
+                    <i class="fa-solid fa-globe fa-lg" style="color: #a1b2ce"></i>
+
+                    <select name="language">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

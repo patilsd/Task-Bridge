@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font awesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+        <link rel="icon" href="images/TB_Logo.png">
+        <title>Cyber Cyclists 020</title>
+        <link rel="stylesheet" href="homepage.css" />
+    </head>
+
+<body>
+    <nav>
+        <div id="navbar">
+            <div class="nav_left">
+                <div id="burger_icon"><i class="fa-solid fa-bars"></i></div>
+                <a href="../index.html"><img src="../images/TB_Logo.png" alt="Website Logo" /></a>
+                <div id="nav_items">
+                    <a href="./homepage.html">
+                        <div class="nav_item">
+                            Dashboards <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                    </a>
+                    <a href="./createTask.html">
+                        <div class="nav_item create_btn">Create</div>
+                    </a>
+                    <a href="../index.html"><div class="nav_item">
+                        Log out
+                    </div></a>
+                </div>
+            </div>
+            <div class="nav_right">
+                <div id="search_bar">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" placeholder="Search" />
+                </div>
+                <div class="nav_icon"><i class="fa-solid fa-bell"></i></div>
+                <div class="nav_icon"><i class="fa-solid fa-gear"></i></div>
+                <div class="nav_icon"><i class="fa-solid fa-user"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard -->
+
+    <div id="content">
+        <aside>
+            <div id="sidebar">
+                <div id="side_header">
+                    <img src="../images/profile_img.jpg" alt="profile_img">
+                    <div class="header_text">
+                        <div class="sidebar_title">My Kanban Project</div>
+                        <div class="sidebar_subtitle">Software Project</div>
+                    </div>
+                </div>
+                <div id="planning">
+                    <div class="side_heading">PLANNING</div>
+                    <div id="sidebar_items">
+                        <div class="sidebar_item">
+                            <span><i class="fa-solid fa-bars-staggered"></i></span>
+                            <span>Timeline</span>
+                        </div>
+                        <a href="./kanban.html">
+                            <div class="sidebar_item">
+                                <span><i class="fa-solid fa-chess-board"></i></span>
+                                <span>Board</span>
+                            </div>
+                        </a>
+                        <a href="ListPage.html">
+                            <div class="sidebar_item">
+                                <span><i class="fa-solid fa-list"></i></span>
+                                <span>List</span>
+                            </div>
+                        </a>
+                        <div class="sidebar_item">
+                            <span><i class="fa-solid fa-bullseye"></i></span>
+                            <span>Goals</span>
+                        </div>
+                        <div class="sidebar_item">
+                            <span><i class="fa-solid fa-plus"></i></span>
+                            <span>Add view</span>
+                        </div>
+                    </div>
+                    <div class="side_heading">DEVELOPMENT</div>
+                    <div class="sidebar_item">
+                        <span><i class="fa-solid fa-code"></i></span>
+                        <span>Code</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+
+            <div class="chart-container">
+                <div class="upper-part">
+                    <div class="Bar-chart">
+                        <div class="chart-heading">Task Count Assigned to</div>
+                        <div class="chart">
+                            <div class="y-axis-labels">
+                                <div>16</div>
+                                <div>14</div>
+                                <div>12</div>
+                                <div>10</div>
+                                <div>8</div>
+                                <div>6</div>
+                                <div>4</div>
+                                <div>2</div>
+                                <div>0</div>
+                            </div>
+                            <div class="bar-chart">
+                                <div class="bar-group">
+                                    <div class="bar">
+                                        <div class="x-axis" style="--height: 370px; background: linear-gradient(to top,#80B3FF, #687EFF);
+                                        "></div>
+                                    </div>
+                                    <div class="bar-label">Ankur</div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar">
+                                        <div class="x-axis"
+                                            style="--height: 320px;background: linear-gradient(to top,#80B3FF, #687EFF);">
+                                        </div>
+                                    </div>
+                                    <div class="bar-label">Pragya</div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar">
+                                        <div class="x-axis"
+                                            style="--height: 260px;background: linear-gradient(to top,#80B3FF, #687EFF);">
+                                        </div>
+                                    </div>
+                                    <div class="bar-label">Shweta</div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar">
+                                        <div class="x-axis"
+                                            style="--height: 240px;background: linear-gradient(to top,#80B3FF, #687EFF);">
+                                        </div>
+                                    </div>
+                                    <div class="bar-label">Alice</div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar">
+                                        <div class="x-axis"
+                                            style="--height: 280px;background: linear-gradient(to top,#80B3FF, #687EFF);">
+                                        </div>
+                                    </div>
+                                    <div class="bar-label">Bob</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Overdue-chart">
+                        <div class="chart-title">
+                            OVERDUE
+                        </div>
+                        <div class="pie-chart">
+                            <div class="slice yes"></div>
+                            <div class="slice no"></div>
+                        </div>
+                        <div class="chart-label">
+                            <span class="no-label">No<br>44%</span>
+                            <span class="yes-label">Yes<br>56%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-part">
+                    <div class="Priority-chart">
+                        <h1>Task Priority Count</h1>
+                        <div class="circle">
+                            <div class="text">50</div>
+                        </div>
+                        <div class="legend">
+                            <div><span class="low"></span>Low</div>
+                            <div><span class="medium"></span>Medium</div>
+                            <div><span class="high"></span>High</div>
+                        </div>
+                    </div>
+                    <div class="line-container">
+                        <div class="heading">Task Status Count and % Age</div>
+
+
+                        <div class="line-part">
+                            <canvas id="lineChart" width="500" height="300"></canvas>
+
+                            <!-- Y-axis labels -->
+                            <div class="y-labels">
+                                <div>40%</div>
+                                <div>35%</div>
+                                <div>30%</div>
+                                <div>25%</div>
+                                <div>20%</div>
+                                <div>15%</div>
+                                <div>10%</div>
+                                <div>5%</div>
+                                <div>0%</div>
+                            </div>
+
+                            <!-- X-axis labels -->
+                            <div class="x-labels">
+                                <div>Not Started Yet</div>
+                                <div>Open</div>
+                                <div>In Progress</div>
+                                <div>Testing</div>
+                                <div>Completed</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        const canvas = document.getElementById('lineChart');
+                        const ctx = canvas.getContext('2d');
+
+                        // Adjusted y positions for data points to match y-axis labels
+                        const dataPoints = [
+                            { x: 50, y: 160, percentage: "18%" }, // 18%
+                            { x: 150, y: 170, percentage: "16%" }, // 16%
+                            { x: 250, y: 170, percentage: "16%" }, // 16%
+                            { x: 350, y: 180, percentage: "14%" }, // 14%
+                            { x: 450, y: 120, percentage: "36%" }  // 36%
+                        ];
+
+                        // Function to draw the line chart
+                        function drawLineChart(ctx, dataPoints) {
+                            // Draw the line connecting data points
+                            ctx.beginPath();
+                            ctx.moveTo(dataPoints[0].x, dataPoints[0].y); // Start from the first point
+
+                            for (let i = 1; i < dataPoints.length; i++) {
+                                ctx.lineTo(dataPoints[i].x, dataPoints[i].y); // Draw lines to subsequent points
+                            }
+
+                            ctx.strokeStyle = '#687EFF'; // Line color (orange)
+                            ctx.lineWidth = 3; // Line width
+                            ctx.stroke(); // Draw the line
+
+                            // Draw points and percentages
+                            ctx.fillStyle = '#687EFF'; // Point color (orange)
+                            ctx.font = "14px Arial";
+                            ctx.textAlign = "center";
+                            ctx.textBaseline = "bottom";
+
+                            dataPoints.forEach(point => {
+                                ctx.beginPath();
+                                ctx.arc(point.x, point.y, 5, 0, Math.PI * 2, true); // Draw each point
+                                ctx.fill();
+                                ctx.fillText(point.percentage, point.x, point.y - 10); // Draw the percentage above each point
+                            });
+                        }
+
+                        // Draw the chart
+                        drawLineChart(ctx, dataPoints);
+                    </script>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer Section -->
+    <section class="container">
+        <img src="../images/TB_Logo.png" alt="TB Logo" />
+        <div class="row">
+            <div class="d1">
+                <h1>Company</h1>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="d1">
+                <h1>Products</h1>
+                <ul>
+                    <li><a href="#">TB Dashboard</a></li>
+                    <li><a href="#">TB Workflow</a></li>
+                    <li><a href="#">TB Service Management</a></li>
+                    <br />
+                    <li><a href="#">See all products →</a></li>
+                </ul>
+            </div>
+            <div class="d1">
+                <h1>Resources</h1>
+                <ul>
+                    <li><a href="#">Technical support</a></li>
+                    <li><a href="#">Purchasing & licensing</a></li>
+                    <li><a href="#">Knowledge base</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">My account</a></li>
+                    <br />
+                    <li><a href="#">Create support ticket →</a></li>
+                </ul>
+            </div>
+            <div class="d1">
+                <h1>Learn</h1>
+                <ul>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Training & certification</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Developer resources</a></li>
+                    <li><a href="#">Enterprise services</a></li>
+                    <br />
+                    <li><a href="#">See all resources →</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Copyright © 2024 Masai</p>
+
+            <div class="footer-link">
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Impressum</a></li>
+                </ul>
+                <div class="lang">
+                    <i class="fa-solid fa-globe fa-lg" style="color: #a1b2ce"></i>
+
+                    <select name="language">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

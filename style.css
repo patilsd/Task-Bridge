@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+
+body{
+    background-color: rgb(246, 246, 246);
+    font-family: "Open Sans", sans-serif;
+}
+
+.landing-container{
+    margin:auto;
+    
+}
+
+header{
+    background: linear-gradient(to right,#215478, #257db3);
+    color:rgb(252, 238, 238);
+    text-align: center;
+    padding: 1rem;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    line-height: 0.5;
+}
+
+header img{
+    width: 4rem;
+}
+
+header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: center;
+   
+}
+header button{
+    height:12%;
+    padding: 0.5rem 1rem;
+    border:none;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+header button a {
+    text-decoration: none;
+    color: black; 
+}
+
+header button:hover{
+    background-color: rgb(11, 11, 11);
+}
+header button a:hover{
+    color: white;
+    background-color: black;
+}
+
+.intro{
+    display:flex;
+    justify-content: space-evenly;
+    width: 95%
+}
+
+.intro p{
+    text-align: center;
+    font-size:30px;
+    font-weight: 550;
+    padding-top: 50px;
+}
+
+.intro img{
+    width:50%;
+}
+.features{
+    width:80%;
+    text-align:center;
+    margin: 1rem auto;
+}
+
+.features h2{
+    font-weight: bolder;
+    font-size:40px;
+}
+
+.choose-cards{
+    display:flex;
+    justify-content: space-between;
+}
+
+.single-cards{
+    margin: 1rem;
+    height: 100%;
+    border-radius:10px;
+    background: linear-gradient(to left, #5d72d8, #1b48df);
+}
+
+.single-cards h3{
+    font-size: 22px;
+    color:rgb(143, 215, 252)
+}
+
+.single-cards p{
+    color:rgb(219, 206, 206);
+    font-size: 15px;
+}
+
+.key-features h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top:150px;
+   
+}
+.single-key{
+    display:flex;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    text-align:center;
+    width:89%;
+    margin : 5rem auto;
+}
+
+.single-key h3{
+    padding-top:40px;
+    font-size:45px;
+}
+.task {
+    padding: 20px;
+}
+.single-key img{
+    width:50%;
+    height:400px;
+}
+
+.testimonials  {
+    width:80%;
+    padding: 15px;
+    margin: auto;
+}
+
+.testimonials h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom:50px;
+}
+.review-container{
+    display:flex;
+    justify-content: space-around;
+}
+.reviews p{
+    font-weight: 500;
+    margin: 1rem;
+}
+
+.foot {
+    text-align: center;
+    font-size: 12px;
+    color: #525252;
+    margin-left:100px;
+    margin-bottom:25px;
+}
+
+.our-team {
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.our-team > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.our-team h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 1.5rem;
+    text-align: center;
+    vertical-align: top;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+    color: #3a87ad;
+}
+
+.team-member p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 1em;
+}
+
+.team-member p:first-of-type {
+    font-weight: bold;
+    color: #333;
+}
+
+.footer-end {
+    text-align: center;
+    padding: 20px;
+    background-color: #255167;
+    color: white;
+}
+
+footer .button {
+    background-color: #ffffff;
+    color: #3a87ad;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+footer .button:hover {
+    background-color: #263841;
+    color: rgb(218, 214, 214);
+}
+
+@media screen and (max-width: 700px) {
+    .intro, .single-key, .review-container, .choose-cards, .our-team > div {
+        flex-direction: column;
+    }
+
+    .single-key img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header button{
+        display: none;
+    }
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font awesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+        <link rel="icon" href="images/TB_Logo.png">
+        <title>Cyber Cyclists 020</title>
+        <link rel="stylesheet" href="createTask.css" />
+    </head>
+
+<body>
+    <nav>
+        <div id="navbar">
+            <div class="nav_left">
+                <div id="burger_icon"><i class="fa-solid fa-bars"></i></div>
+                <a href="../index.html"><img src="../images/TB_Logo.png" alt="Website Logo" /></a>
+                <div id="nav_items">
+                    <a href="./homepage.html"><div class="nav_item">
+                        Dashboards <span><i class="fa-solid fa-chevron-down"></i></span>
+                    </div></a>
+                    <div class="nav_item create_btn">Create</div>
+                    <a href="../index.html"><div class="nav_item">
+                        Log out
+                    </div></a>
+                </div>
+            </div>
+            <div class="nav_right">
+                <div id="search_bar">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" placeholder="Search" />
+                </div>
+                <div class="nav_icon"><i class="fa-solid fa-bell"></i></div>
+                <div class="nav_icon"><i class="fa-solid fa-gear"></i></div>
+                <div class="nav_icon"><i class="fa-solid fa-user"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard -->
+
+    <div id="content">
+        <aside>
+            <div id="sidebar">
+                <div id="side_header">
+                    <img src="../images/profile_img.jpg" alt="profile_img">
+                    <div class="header_text">
+                        <div class="sidebar_title">My Kanban Project</div>
+                        <div class="sidebar_subtitle">Software Project</div>
+                    </div>
+                </div>
+                <div id="planning">
+                    <div class="side_heading">PLANNING</div>
+                    <div id="sidebar_items">
+                        <div class="sidebar_item">
+                            <span><i class="fa-solid fa-bars-staggered"></i></span>
+                            <span>Timeline</span>
+                        </div>
+                        <a href="./kanban.html">
+                            <div class="sidebar_item">
+                                <span><i class="fa-solid fa-chess-board"></i></span>
+                                <span>Board</span>
+                            </div>
+                        </a>
+                        <a href="ListPage.html">
+                            <div class="sidebar_item">
+                                <span><i class="fa-solid fa-list"></i></span>
+                                <span>List</span>
+                            </div>
+                        </a>
+                        <div class="sidebar_item">
+                            <span><i class="fa-solid fa-bullseye"></i></span>
+                            <span>Goals</span>
+                        </div>
+                        <div class="sidebar_item">
+                            <span><i class="fa-solid fa-plus"></i></span>
+                            <span>Add view</span>
+                        </div>
+                    </div>
+                    <div class="side_heading">DEVELOPMENT</div>
+                    <div class="sidebar_item">
+                        <span><i class="fa-solid fa-code"></i></span>
+                        <span>Code</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+
+            <div id="create_task">
+                <div class="line_row">
+                    <h2>Create issue</h2>
+                    <button>Add Task</button>
+                </div>
+                <div id="inputs">
+                    <div class="input_box">
+                        <label for="project"><span><i class="fa-solid fa-diagram-project"></i></span>Project</label>
+                        <input type="text" placeholder="Project Name">
+                    </div>
+                    <div class="input_box">
+                        <label for="issue_type"><span><i class="fa-solid fa-triangle-exclamation"></i></span>Issue
+                            Type</label>
+                        <input type="text" placeholder="Issue Type">
+                    </div>
+                    <div class="input_box">
+                        <label for="status"><span><i class="fa-solid fa-check"></i></span>Status</label>
+                        <select name="status" id="status">
+                            <option value="none">Select status</option>
+                            <option value="complete">Completed</option>
+                            <option value="pending">Pending</option>
+                        </select>
+                    </div>
+                    <div class="input_box">
+                        <label for="summary"><span><i class="fa-regular fa-message"></i></span>Summary</label>
+                        <textarea name="summary" id="summary" placeholder="Give a brief info of your task"></textarea>
+                    </div>
+                    <div class="input_box">
+                        <label for="desc"><span><i class="fa-solid fa-quote-left"></i></span>Description</label>
+                        <textarea name="desc" id="desc" placeholder="Describe your task"></textarea>
+                    </div>
+                    <div class="input_box">
+                        <label for="assignee"><span><i class="fa-solid fa-user"></i></span>Assignee</label>
+                        <input type="text" placeholder="Assignee">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer Section -->
+    <section class="container">
+        <img src="../images/TB_Logo.png" alt="TB Logo" />
+        <div class="row">
+            <div class="d1">
+                <h1>Company</h1>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="d1">
+                <h1>Products</h1>
+                <ul>
+                    <li><a href="#">TB Dashboard</a></li>
+                    <li><a href="#">TB Workflow</a></li>
+                    <li><a href="#">TB Service Management</a></li>
+                    <br />
+                    <li><a href="#">See all products →</a></li>
+                </ul>
+            </div>
+            <div class="d1">
+                <h1>Resources</h1>
+                <ul>
+                    <li><a href="#">Technical support</a></li>
+                    <li><a href="#">Purchasing & licensing</a></li>
+                    <li><a href="#">Knowledge base</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">My account</a></li>
+                    <br />
+                    <li><a href="#">Create support ticket →</a></li>
+                </ul>
+            </div>
+            <div class="d1">
+                <h1>Learn</h1>
+                <ul>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Training & certification</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Developer resources</a></li>
+                    <li><a href="#">Enterprise services</a></li>
+                    <br />
+                    <li><a href="#">See all resources →</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Copyright © 2024 Masai</p>
+
+            <div class="footer-link">
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Impressum</a></li>
+                </ul>
+                <div class="lang">
+                    <i class="fa-solid fa-globe fa-lg" style="color: #a1b2ce"></i>
+
+                    <select name="language">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
